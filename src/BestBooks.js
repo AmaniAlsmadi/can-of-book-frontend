@@ -16,12 +16,14 @@ class BestBooks extends React.Component {
 
     return (
       <>
-        <h2>My Essential Lifelong Learning &amp; Formation Shelf</h2>
+        <h1> Welcome </h1>
+        <p> Please login to continue.</p>
 
         {this.state.books.length ? (
           <p>Book Carousel coming soon</p>
+          
         ) : (
-          <h3>No Books Found :(</h3>
+          <h4>No Books Found </h4>
         )}
       </>
     )

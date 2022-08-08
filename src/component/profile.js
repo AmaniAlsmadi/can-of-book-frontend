@@ -3,8 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
-import Header from "../Header";
-import Footer from "../Footer";
+
 
 const Profile = () => {
     const { user, isAuthenticated, isLoading } = useAuth0();
@@ -16,7 +15,7 @@ const Profile = () => {
     return (
         isAuthenticated && (
             <>
-                <Header />
+               
                 <Card className="card" style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={user.picture} alt={user.name} />
                     <Card.Body>
@@ -26,7 +25,7 @@ const Profile = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                < Footer />
+                
             </>
         )
     );
