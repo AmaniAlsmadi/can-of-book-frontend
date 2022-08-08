@@ -1,11 +1,19 @@
-.button{
+.button {
+
     margin: 5px 10px;
-    }
+    margin-left: auto;
+    margin-right: 10px;
+    width: 8em
     
-    .card{
-       margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 8em
-    }
-    
+}
+
+.card {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
+.navItem {
+    margin-left: 20px;
+}
