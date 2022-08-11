@@ -12,7 +12,7 @@ class BestBooks extends React.Component {
   }
 
   favBook = async()=>{
-const book = await axios.get('http://localhost:3001/books');
+const book = await axios.get('https://app-book0.herokuapp.com//books');
 this.setState({ books: book.data});
   }
 

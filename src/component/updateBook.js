@@ -12,7 +12,7 @@ export default function UpdateBook() {
     const [book, setBook] = useState();
 
     async function fetchData() {
-        const { data } = await axios.get(`http://localhost:3001/books/${id}`)
+        const { data } = await axios.get(`https://app-book0.herokuapp.com/books/${id}`)
         setBook(data)
     }
 
@@ -23,7 +23,7 @@ export default function UpdateBook() {
             'description': e.target.description.value,
             'status': e.target.status.value
         }
-        await axios.put(`http://localhost:3001/books/${id}`, { data })
+        await axios.put(`https://app-book0.herokuapp.com/books/${id}`, { data })
     }
 
     useEffect(() => {

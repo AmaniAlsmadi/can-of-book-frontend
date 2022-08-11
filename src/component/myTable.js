@@ -14,7 +14,7 @@ export default class TableOfBook extends react.Component {
 
 
     favBook = async () => {
-        const book = await axios.get('http://localhost:3001/books');
+        const book = await axios.get('https://app-book0.herokuapp.com/books');
         this.setState({ books: book.data });
     }
 
@@ -24,7 +24,7 @@ export default class TableOfBook extends react.Component {
     }
 
     deleteBook = async (id) => {
-        await axios.delete(`http://localhost:3001/books/${id}`);
+        await axios.delete(`https://app-book0.herokuapp.com/books/${id}`);
         this.favBook()
     }
 
@@ -52,7 +52,7 @@ export default class TableOfBook extends react.Component {
                                     <td>{item.title}</td>
                                     <td>{item.status}</td>
                                     <td><button onClick={() => this.deleteBook(item._id)}>Delete</button></td>
-                                    <td><Link to={'/books/${item._id}'}><button>Update</button></Link></td>
+                                    <td><Link to={''}><button>Update</button></Link></td>
 
                                 </tr>
                             )
